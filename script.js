@@ -23,7 +23,12 @@ button.addEventListener("click", function () {
 
     paragraph.textContent = images[currentIndex].aboutYear;
     image.src = images[currentIndex].src;
+    customFunction();
 });
+
+function customFunction() {
+  console.log("Changed the picture");
+}
 
 // Mouseover Event
 image.addEventListener("mouseover", function () {
